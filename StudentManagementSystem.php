@@ -1,4 +1,7 @@
-
+<?php
+// Start session to store messages
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -70,7 +73,9 @@
                     </tr>
                 </thead>
                 <tbody>
-                    
+                   <?php
+                    include 'process_student.php'; // Include to get the student list
+                    ?> 
                 </tbody>
             </table>
         </form>
